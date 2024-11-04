@@ -4,8 +4,10 @@ import routes from '../resource/routes/routes.json';
 const request = require('supertest');
 
 describe('Users Negative Tests', () => {
-    it('Should get an Auth Token with valid credentials', async () => {
-        const response = await request(routes.BASE_URL).get(routes.AUTH_ENDPOINT);   
+    it('Should validate USER with invalid id return SC 404', async () =>{
+        //expect that user with id 50 will never be removed from our database
+        const response = await request(routes.BASE_URL).get(routes.SINGLE_USER_ENDPOINT+'999');   
+        expect(response.status).toBe(404);
     }),
 
     it('Should return a message "Access Token is required" if no username/passw is provided', async () => {

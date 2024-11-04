@@ -1,0 +1,6 @@
+{
+    "BASE_URL" : "https://dummyjson.com",    
+    "USERS_ENDPOINT" : "/users",
+    "SINGLE_USER_ENDPOINT" : "/users/50" ,
+    "AUTH_ENDPOINT" : "/auth/login"
+}

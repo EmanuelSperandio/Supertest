@@ -1,0 +1,17 @@
+{
+  "name": "supertest",
+  "version": "1.0.0",
+  "description": "Automation Test for DummyJSON API using SuperTest + Jester",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "@emanuelsperandio",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "typescript": "^5.6.3"
+  }
+}
